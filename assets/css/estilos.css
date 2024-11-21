@@ -1,0 +1,75 @@
+.pdf_visualizacao{
+    height: 100px;
+    width: 200px;
+}
+.botao_lateral a {
+    font-size: 14px;
+    color: #fff;
+    background-color: #e75e8d;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 25px;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+}
+  
+  .botao_lateral a:hover {
+    background-color: #fff;
+    color: #e75e8d;
+  }
+
+  .sociais {
+    border-radius: 23px;
+    padding: 30px;
+    max-height: 567px;
+    min-height: 567px;
+  }
+  
+  .sociais ul li {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .sociais ul li img {
+    float: left;
+    margin-right: 15px;
+  }
+  
+  .sociais ul li h4 {
+    font-size: 15px;
+    padding-top: 7px;
+  }
+  
+  .sociais ul li h6 {
+    font-size: 15px;
+    color: #666;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .sociais ul li span {
+    color: #fff;
+    font-size: 15px;
+    margin-right: 10px;
+  }
+  
+  .sociais ul li .download i {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-23px);
+    width: 46px;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    color: #ec6090;
+    border-radius: 50%;
+  }
+  
+
