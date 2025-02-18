@@ -1,0 +1,85 @@
+
+#home{
+    display: flex;
+}
+
+#cta{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 2%;
+}
+
+#cta .title-banner{
+    font-size: 3.5rem;
+    text-align: left;
+    font-family: "Kodchasan", serif;
+
+}
+
+#cta .description-banner{
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+#cta .title-banner span{
+    color: var(--primary-a10);
+    font-family: "Kodchasan", serif;
+}
+
+
+
+/* ------ Banner ------ */
+
+#photo{
+    height: 30%;
+    width: fit-content;
+}
+
+#blob{
+    height: 55%;
+    width: fit-content;
+}
+
+#banner{
+    margin-top: 5%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 50%;
+}
+
+@media screen and (max-width: 1170px){ 
+    #home{
+        width: 100%;
+        padding-top: 0px;
+    }
+
+    #banner{
+        display: none;
+    }
+
+    #cta{
+        width: 100%;
+        text-align: justify;
+    }
+    
+}
+
+@media screen and (max-width: 670px){ 
+    
+    #cta .title-banner{
+        font-size: 3rem;
+    }
+
+}
+
+@media screen and (max-width: 400px){ 
+    
+    #cta .title-banner{
+        font-size: 2.8rem;
+    }
+
+}
+

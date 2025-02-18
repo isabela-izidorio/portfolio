@@ -1,0 +1,205 @@
+#container2 {
+    display: flex; /* Enables a flex layout to align sections side by side */
+    width: 100%; /* Ensure the container takes the full width of the screen */
+    gap: 5%; /* Creates a gap between the two sections */
+    min-height: 60vh;
+}
+
+#hello-section {
+    width: 35%; /* Takes up 40% of the screen width */
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    margin-top: 2%;
+}
+
+#skills-section {
+    width: 60%; /* Takes up 55% of the screen width */
+    /* Example background color */
+    padding: 0px 20px 20px 20px;
+    box-sizing: border-box;
+    margin-top: 3%;
+}
+
+#skills-section .content {
+    margin: 0;
+}
+
+#ctc .title-banner{
+    font-size: 3.5rem;
+    text-align: left;
+    font-family: "Kodchasan", serif;
+    margin-bottom: 15px;
+}
+
+
+#ctc .title-banner span{
+    color: var(--primary-a10);
+    font-family: "Kodchasan", serif;
+}
+
+/* skills container */
+
+#skills-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.skill-type{
+    box-sizing: content-box;
+    display: flex;
+    min-height: 20px;
+    width: 43.5%;    
+    padding: 15px 10px 20px 10px;
+    align-items: center;
+    border-top: 1px solid rgba(17, 24, 39, 0.1);
+    border-left: 5px solid var(--primary-a10);
+    border-right: 1px solid rgba(17, 24, 39, 0.1);
+    border-bottom: 1px solid rgba(17, 24, 39, 0.1);
+
+}
+
+.skill-type p {
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 18.72px;
+    color: rgba(17, 24, 39, 1);
+}
+
+.skill-type li {
+    list-style: none;
+    font-size: 1.1rem; /* font-size: 0.875rem; */
+}
+
+.side{
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    padding: 0.5rem;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#photo{
+    width: 83%;
+    height: auto;
+}
+
+.skills{
+    align-items: center;
+}
+
+.side-icons{
+    margin-left: 45px;
+}
+
+
+
+/* Responsividade geral */
+
+@media screen and (max-width: 1170px) {
+
+    #container2 {
+        flex-direction: column;
+    }
+
+    #hello-section{
+        width: 100%;
+    }
+    
+    #skills-section{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 772px) {
+    .skill-type{
+        width: 100%;    
+    }
+}
+
+@media screen and (max-width: 670px){ 
+    
+    #ctc .title-banner{
+        font-size: 3rem;
+    }
+
+}
+
+@media screen and (max-width: 400px){ 
+    
+    #ctc .title-banner{
+        font-size: 2.8rem;
+    }
+
+    #ctc .description-banner{
+        font-size: 1.1rem;
+    }
+
+}
+
+@media screen and (max-width: 380px){ 
+
+    .side-icons{
+        display: none;
+    }
+
+}
+
+@media (max-width: 1170px) and (min-width: 450px) {
+    #hello-section img{
+        display: none;
+    }
+
+}
+
+/* ------ Social media btns ------ */
+
+.social-media-btns{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.social-media-btns :hover{
+    color: var(--primary-a10);
+}
+
+.social-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    padding: 35px;
+    border-radius: 10px;
+    border: 3px solid var(--surface-tonal-a30);
+    cursor: pointer;
+    transition: box-shadow .5s easy;
+}
+
+.social-btn a{
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.social-media-btns i {
+    font-size: 2.5rem;
+}
+
+.social-btn:hover{
+    border: 3px solid var(--primary-a10);
+    color: var(--primary-a10);
+    box-shadow: 0px 0px 3px 1px var(--primary-a40);
+}

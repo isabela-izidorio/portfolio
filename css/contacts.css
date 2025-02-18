@@ -1,0 +1,254 @@
+#container {
+    display: flex;
+    /* Enables a flex layout to align sections side by side */
+    width: 100%;
+    /* Ensure the container takes the full width of the screen */
+    gap: 5%;
+    /* Creates a gap between the two sections */
+    min-height: 60vh;
+}
+
+#contact-section {
+    width: 40%;
+    /* Takes up 40% of the screen width */
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    margin-top: 2%;
+}
+
+#email-section {
+    width: 55%;
+    /* Takes up 55% of the screen width */
+    box-sizing: border-box;
+    margin-top: 3%;
+}
+
+
+#ctb .title-banner {
+    font-size: 3.5rem;
+    text-align: left;
+    font-family: "Kodchasan", serif;
+}
+
+#ctb .description-banner {
+    font-size: 1.3rem;
+    text-align: justify;
+    margin: 20px 0% 20px 0%;
+}
+
+#ctb .description-banner #email {
+    color: #1A1A1A;
+}
+
+#ctb .title-banner span {
+    color: var(--primary-a10);
+    font-family: "Kodchasan", serif;
+}
+
+/* Email forms */
+
+.contact-form {
+    background-color: transparent;
+}
+
+.contact-form .heading {
+    font-size: 1rem;
+    margin-bottom: 12px;
+    font-weight: bold;
+    display: block;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 1rem;
+}
+
+textarea {
+    resize: none;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px var(--primary-a0);
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-form button[type="submit"] {
+    width: 100%;
+    background-color: var(--primary-a0);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Responsividade geral */
+
+@media screen and (max-width: 1170px) {
+
+    #container {
+        flex-direction: column;
+    }
+
+
+    #contact-section {
+        width: 100%;
+    }
+
+    #email-section {
+        margin-top: 10%;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 670px) {
+
+    #ctb .title-banner {
+        font-size: 3rem;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    #ctb .title-banner {
+        font-size: 2.8rem;
+    }
+
+    #ctb .description-banner {
+        font-size: 1rem;
+    }
+
+}
+
+/* ------- Social media btns ---------*/
+
+.btn-social {
+    display: flex;
+    height: 70px;
+    width: 400px;
+    margin-top: 0;
+}
+
+.btn-social svg {
+    position: absolute;
+    display: flex;
+    width: 60%;
+    height: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 1;
+    transition: opacity 0.25s;
+    z-index: 2;
+    padding: 0.25rem;
+    cursor: pointer;
+    fill: #1A1A1A;
+}
+
+
+.btn-social .social-link1,
+.btn-social .social-link2,
+.btn-social .social-link3,
+.btn-social .social-link4,
+.btn-social .social-link5 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    color: whitesmoke;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.25s;
+    border-radius: 50px;
+}
+
+.btn-social svg {
+    transform: scale(1);
+}
+
+
+.btn-social .social-link2:hover {
+    background-color: #242c34;
+    animation: bounce_613 0.4s linear;
+}
+
+.btn-social .social-link3:hover {
+    background-color: #e8d424;
+    animation: bounce_613 0.4s linear;
+}
+
+.btn-social .social-link4:hover {
+    background-color: #0a66c2;
+    animation: bounce_613 0.4s linear;
+}
+
+
+.btn-social .social-link2:hover svg,
+.btn-social .social-link3:hover svg,
+.btn-social .social-link4:hover svg {
+    fill: #fff !important;
+    /* Cor laranja no hover */
+}
+
+@keyframes bounce_613 {
+    40% {
+        transform: scale(1.4);
+    }
+
+    60% {
+        transform: scale(0.8);
+    }
+
+    80% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+/* Responsividade para telas menores que 400px - btns social */
+
+@media screen and (max-width: 400px) {
+
+    .btn-social {
+        width: 320px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    .btn-social {
+        width: 350px;
+    }
+
+}
