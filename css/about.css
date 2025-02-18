@@ -151,10 +151,18 @@
 }
 
 @media (max-width: 1170px) and (min-width: 450px) {
-    #hello-section img{
+    #hello-section #myphoto{
         display: none;
     }
 
+}
+
+@media screen and (max-width: 450px){ 
+
+    #myphoto{
+        display: flex;
+        justify-content: center;
+    }
 }
 
 /* ------ Social media btns ------ */
